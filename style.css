@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+}
+.field {
+    display: block;
+    max-width: 400px;
+    margin-bottom: 20px;
+}span {
+    display: block;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: #6F7482;
+margin-bottom: 2px;
+}
+.field input, 
+.field textarea, 
+.field select {
+background: #F8FAFC;
+border-radius: 4px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+color: #384256;
+border: 1px solid #0048D9;
+border: 0;  
+width: 100%;
+outline: none;
+}
+input::placeholder {
+    color: #384256;
+}
+input:focus, textarea:focus {
+border: 1px solid #0048D9; 
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.checkbox {
+    display: flex;
+    gap: 20px;
+}
+.checkbox input {
+display: none;
+}
+.checkbox__box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3B4256;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.checkbox__icon {
+    display: none;
+  transform: rotate(45deg);
+  height: 24px;
+  width: 12px;
+  border-bottom: 7px  solid #78b13f;
+  border-right:  7px solid #78b13f;
+}
+.checkbox input:checked~.checkbox_box>.checkbox__icon {
+    display: inline-block;
+    }
+
+    .radio {
+        display: flex;
+        gap: 20px;
+    }
+    .radio input {
+    display: none;
+    }
+    .radio__box {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #3B4256;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .radio__icon {
+        display: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #3B4256;
+
+    }
+    .radio input:checked~.radio_box>.radio__icon {
+        display: inline-block;
+        }
